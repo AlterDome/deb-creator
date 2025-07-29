@@ -81,6 +81,7 @@ echo " 1 exit "
 function debinst() { 
 echo " Собрать пакет в текущем каталоге "
 
+cd package/DEBIAN
 debuild -us -uc -b
 
 echo " 2 Exit ..."
